@@ -1,37 +1,59 @@
 
 
-#characters
-image dh = "Dyne Happy.png"
-image da = "Dyne_Arcade.png"
+    #characters
+    image dh = "Dyne Happy.png"
+    image da = "Dyne_Arcade.png"
 
-define e = Character("DYNE")
+    define e = Character("DYNE")
 
-show dh
+    label start:
 
-label start:
+    scene bg_conceptv2
 
-e "Hey there big boi."
+    show dh
 
-e "Wanna play darkstalkers with me?"
+    e "Hey there big boi."
 
-menu:
+    e "Wanna play darkstalkers with me?"
+
+    menu:
         "Why not":
-            "Alright, lets go."
+            jump ok
+
+        "I'm not playing with you":
+            jump destruction
+
+    label destruction:
+
+    e "I will crush you"
+
+    "Oh no I'm going to die"
+
+    return
+
+    label ok:
 
 
+    e "Alright let's go"
+
+    jump arcade
 
 
-label da:
+    label arcade:
 
-         show da:
-         jump arcade
+    hide dh
 
+    show da
 
-label arcade:
-         menu:
-           "Placeholder":
-                         e "Wow, that sure was fun! Say, I'm having a party at my apartment, wanna come?"
+    menu:
+        "Play":
+            jump existence
 
+    label existence:
+
+    e "Wow, that sure was fun! Say, I'm having a party at my apartment, wanna come?"
+
+    return
 
 
 
