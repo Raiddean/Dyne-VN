@@ -1,92 +1,38 @@
 
 
 #characters
-image dh = "Dyne_Happy.png"
+image dh = "Dyne Happy.png"
 image da = "Dyne_Arcade.png"
 
 define e = Character("DYNE")
 
-    show dh
+show dh
 
-    e "Hey there big boi."
+label start:
 
-    e "Wanna play darkstalkers with me?"
+e "Hey there big boi."
 
+e "Wanna play darkstalkers with me?"
 
-    menu:
-        e "Wanna play darkstalker's with me?"
-    label start:
-
-        "Sure":
-            e "Alright, lets go."
-
-            label jump arcade:
-            jump arcade
-
-            label da:
-            show da
-            
-            "Nah man, I'm good":
-            e "get out of here you insec"
-            return
+menu:
+        "Why not":
+            "Alright, lets go."
 
 
 
 
+label da:
+
+         show da:
+         jump arcade
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    label arcade:
-           e "Wow, that sure was fun! Say, I'm having a party at my apartment, wanna come?"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+label arcade:
+         menu:
+           "Placeholder":
+                         e "Wow, that sure was fun! Say, I'm having a party at my apartment, wanna come?"
 
 
 
 
     # This ends the game.
-
-    return
