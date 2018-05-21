@@ -2,7 +2,7 @@
 
 #characters
 image dh = "Dyne_Happy.png"
-image da = "dyne_arcade.png"
+image da = "Dyne_Arcade.png"
 
 define e = Character("DYNE")
 
@@ -25,7 +25,7 @@ define e = Character("DYNE")
 
             label da:
             show da
-
+            
             "Nah man, I'm good":
             e "get out of here you insec"
             return
